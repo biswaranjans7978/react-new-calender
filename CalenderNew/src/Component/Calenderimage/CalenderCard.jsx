@@ -10,6 +10,15 @@ function CalenderCard({ data,setData,data2}) {
   let navigate = useNavigate();
   function handleCalenderCard(){
     navigate("/fullImg",{state:data})
+
+    if(isCalender){
+      navigate("/fullImg",{state:data.cardImg})
+
+    }
+    else{
+      navigate("/fullImg",{state:data.cardImg2})
+
+    }
   }
 
    
